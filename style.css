@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    height: 100%;
+}
+
+div {
+    float: left;
+}
+
+#menu {
+    width: 25%;
+    /* margin: 1%;*/
+    background: blue;
+}
+
+#menu ul {
+    color: white;
+    margin: 15%;
+    padding-left: 0;
+}
+
+#content {
+    width: 75%;
+    background: green;
+}

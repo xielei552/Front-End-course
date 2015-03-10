@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#rem_allp").click(function(){
+    $("p").hide();
+  });
+  $("#show_allp").click(function(){
+    $("p").show();
+  });
+  $("#rem_h2").click(function(){
+    $("h2").toggle();
+  });
+  $(id="#rem_sp").click(function(){
+    $("#test").hide();
+  });
+});
+
+</script>
+</head>
+<body>
+
+<h2>This is a heading</h2>
+<p>This is a paragraph.</p>
+<p id="test">This is another paragraph.</p>
+
+<button id="rem_h2">Toggle the heading</button>
+<br>
+<button id="rem_sp">Remove the second paragraph</button>
+<button id="rem_allp">Remove all paragraphs</button>
+<br>
+<button id="show_allp">Recover all paragraphs</button>
+
+
+</body>
+</html>

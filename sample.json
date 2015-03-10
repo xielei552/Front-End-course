@@ -1,0 +1,14 @@
+{
+    "menu":{
+        "0":"Home",
+            "1":"Links",
+            "2":"Contact",
+            "3":"Other"
+    },
+        "home":"Welcome to the homepage",
+        "links":{
+            "google":"http://google.com",
+            "acorn":"http://acorn.acadiau.ca",
+            "unsupervised":"http://unsupervised.ca"
+        }
+}

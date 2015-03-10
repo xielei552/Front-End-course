@@ -1,0 +1,17 @@
+<!DOCTYPE html>                                                                                                                                                                                                                               <html>
+    <body>
+        <script>
+            function speak() {
+                var audio = new Audio();
+                var text1 = "Establish battle control, online";
+                audio.src = "https://translate.google.com/translate_tts?ie=utf-8&tl=en&q=" + text1;
+                audio.play();
+            }
+        </script>
+
+        <p>
+        <button type="button" onclick="speak()">Speak</button>
+        </p>
+
+    </body>
+</html>
