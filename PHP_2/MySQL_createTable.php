@@ -7,9 +7,9 @@
 <?php
 $servername = "localhost";
 //$servername = "127.0.0.1";
-$username = "dsilver";
-$password = "dsilver";
-$dbname = "myDB";
+$username = "lei_xie";
+$password = "bn4qYTHERyujyWGL";
+$dbname = "ray_datebase";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

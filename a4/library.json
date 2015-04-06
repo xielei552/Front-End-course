@@ -1,0 +1,39 @@
+{
+    "library1name":{
+        "title":"Vacation 2014",
+        "date":"August 2014",
+        "photos":{
+            "1":{
+                "title":"Beautiful View",
+                "date":"August 32nd",
+                "url":"http://falcon.acadiau.ca/~jgriffin/2513/photos/beach.jpg"
+            },
+            "2":{
+                "title":"Can't get away from work",
+                "date":"",
+                "url":"http://falcon.acadiau.ca/~jgriffin/2513/photos/work-vacation.jpg"
+            }
+        }
+    },
+    "2ndlibraryname":{
+        "title":"Comp 2513 Fun",
+        "date":"February 2015",
+        "photos":{
+            "1":{
+                "title":"",
+                "date":"",
+                "url":"http://falcon.acadiau.ca/~jgriffin/2513/photos/web-programming.jpg"
+            },
+            "2":{
+                "title":"backwards hacking",
+                "date":"",
+                "url":"http://falcon.acadiau.ca/~jgriffin/2513/photos/programming_home.jpg"
+            },
+            "3":{
+                "title":"",
+                "date":"",
+                "url":"http://falcon.acadiau.ca/~jgriffin/2513/photos/debugging.jpg"
+            }
+        }
+    }
+}

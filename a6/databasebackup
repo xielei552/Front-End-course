@@ -1,0 +1,93 @@
+-- MySQL Administrator dump 1.4
+--
+-- ------------------------------------------------------
+-- Server version	5.5.24-log
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+
+--
+-- Create schema db
+--
+
+USE 123800x_db;
+
+--
+-- Definition of table `employee_records`, `patient_records`,`appointment`
+--
+DROP TABLE IF EXISTS `employee_records`;
+DROP TABLE IF EXISTS `patient_records`;
+DROP TABLE IF EXISTS `appointment`;
+CREATE TABLE `employee_records` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(45) NOT NULL,
+  `last_name` varchar(45) NOT NULL,
+  `address` varchar(50) NOT NULL,
+  `phone_number` varchar(12) NOT NULL,
+  `billing_rate` varchar(20) NOT NULL,	
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `patient_records` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(45) NOT NULL,
+  `last_name` varchar(45) NOT NULL,
+  `address` varchar(50) NOT NULL,
+  `phone_number` varchar(12) NOT NULL,
+  `health_card_number` varchar(30) NOT NULL,	
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `appointment` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `patient` varchar(45) NOT NULL,
+  `employee` varchar(45) NOT NULL,
+  `treatment_type` varchar(20) NOT NULL,
+  `appointment_date` varchar(20) NOT NULL,
+  `appointment_time` varchar(20) NOT NULL,
+  `appointment_duration` varchar(20) NOT NULL,	
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `employee_records`,`patient_records`,`appointment`
+--
+
+/*!40000 ALTER TABLE `employee_records` DISABLE KEYS */;
+INSERT INTO `employee_records` (`id`,`first_name`,`last_name`,`address`,`phone_number`,`billing_rate`) VALUES 
+ (1,'Johnny','Beegood','123 Goodenough Way Truro NS','902-543-5432','$60 per hour' ),
+ (2,'Teri','Broadstreet','Apt 32 Carebear Ave Sackville NS','902-333-2222','$35 per hour' ),
+ (3,'Suzanne','Almighty','2143 Shakey Lane Kentville NS','902-678-4321','$50 per hour' );
+/*!40000 ALTER TABLE `employee_records` ENABLE KEYS */;
+
+/*!40000 ALTER TABLE `patient_records` DISABLE KEYS */;
+INSERT INTO `patient_records` (`id`,`first_name`,`last_name`,`address`,`phone_number`,`health_card_number`) VALUES 
+ (1,'Roger','Moore','14 King St Fredericton NB','506-901-2534','234567890' ),
+ (2,'Carol','Ling','Apt 3 1832 Gottingen St Halifax NS','902-465-3291','012345678' ),
+ (3,'Orin','Snorkel','RR#6 Antigonish Co NS','902-324-2221','987654321' );
+/*!40000 ALTER TABLE `patient_records` ENABLE KEYS */;
+
+/*!40000 ALTER TABLE `appointment` DISABLE KEYS */;
+INSERT INTO `appointment` (`id`,`patient`,`employee`,`treatment_type`,`appointment_date`,`appointment_time`, `appointment_duration`) VALUES 
+ (1,'Carol Ling','Suzanne Almighty','foot massage','2015 Feb 25','10:00am', '1 hour' ),
+ (2,'Roger Moore','Teri Broadstreet','hip acupuncture','2015 May 23','3:00pm', '1.5 hours' ),
+ (3,'Carol Ling','Johnny Beegood','leg massage','2015 May 07','9:00am', '1 hour' ),
+ (4,'Orin Snorkel','Suzanne Almighty', 'back massage','2015 June 22', '1:00pm','2hours'),
+ (5,'Carol Ling','Teri Broadstreet','foot massage','2015 May 23','2:30pm','1.0 hours');
+/*!40000 ALTER TABLE `appointment` ENABLE KEYS */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
